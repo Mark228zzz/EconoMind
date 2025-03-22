@@ -3,6 +3,8 @@ base_model: TheBloke/Mistral-7B-Instruct-v0.2-GPTQ
 library_name: peft
 ---
 
+![LOGO](images/EconoMind-logo.jpg)
+
 # EconoMind
 
 **EconoMind** is a fine-tuned version of `Mistral-7B-Instruct-v0.2-GPTQ` optimized for finance and economics. It is based on the `Mistral-7B` architecture, which is a dense model with 7 billion parameters. The fine-tuning process was implemented by `Quantized Low-Rank Adaptation (QLoRA)`, which quantize whole model's paramters and adds adapters layers inside transformer in the base model rather than retraining the entire model from scratch or using full fune-tuning. `Supervised Fune-Tuning (SFT)` was used to tune the model, which represent pair of data: first as user input, second as LLM respond that we what our model to respond. **EconoMind** was trained on `Josephgflowers/Finance-Instruct-500k` dataset from huggingface, however only **`5000`** of samples were used for **training_dataset**. Furthermore dataset doesn`t have eval/test dataset so model was trained and evaluated on the same **training_dataset**.
@@ -20,7 +22,7 @@ library_name: peft
 
 ### Model Sources
 
-- **GitHub Repository:** [GitHub](https://github.com/Mark228zzz) !
+- **GitHub Repository:** [GitHub](https://github.com/Mark228zzz/EconoMind)
 - **HuggingFace Repository:** [HuggingFace](https://huggingface.co/Markoskokos/EconoMind)
 - **medium Article:** [Article](https://medium.com/@mark.mazur007) !
 
@@ -84,7 +86,7 @@ Example of answer:
 ## Hardware overview
 
 - **Hardware Type:** One NVIDIA A100-SXM4-40GB
-- **Hours used:** ?
+- **Hours used:** 3
 - **Cloud Provider:** Google Deep Learning VM
 - **Compute Region:** North America, North East 1
 
@@ -92,4 +94,4 @@ Example of answer:
 
 Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
 
-- **Carbon Emitted:** ?
+- **Carbon Emitted:** 0.02 kg CO2 eq

@@ -127,7 +127,7 @@ def set_hyperparams():
         save_strategy='epoch',
         eval_strategy='epoch',
         logging_strategy='epoch',
-        logging_steps=2,
+        logging_steps=1,
         optim='paged_adamw_8bit',
         weight_decay=0.01,
         warmup_steps=2,
@@ -173,7 +173,7 @@ def main():
     # YOU CAN MODIFY HYPERPARAMETERS HERE
     wandb.config.update({
         'lr': 2e-4,
-        'batch_size': 4,
+        'batch_size': 3,
         'epochs': 5,
         'rank': 8,
         'lora_alpha': 32,
