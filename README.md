@@ -86,7 +86,7 @@ Example of answer:
 ## Hardware overview
 
 - **Hardware Type:** One NVIDIA A100-SXM4-40GB
-- **Hours used:** 3
+- **Hours used:** 3 hours
 - **Cloud Provider:** Google Deep Learning VM
 - **Compute Region:** North America, North East 1
 
