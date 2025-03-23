@@ -173,12 +173,12 @@ def main():
     # YOU CAN MODIFY HYPERPARAMETERS HERE
     wandb.config.update({
         'lr': 2e-4,
-        'batch_size': 3,
-        'epochs': 5,
+        'batch_size': 4,
+        'epochs': 30,
         'rank': 8,
         'lora_alpha': 32,
         'lora_dropout': 0.05,
-        'sample_numbers': 5000,
+        'sample_numbers': 2000,
     })
 
     # Load quantized model, tokenizer and data_collator
@@ -201,7 +201,7 @@ def main():
     fine_tune(qlora_model, training_args, tokenized_dataset, data_collator)
 
     # Save the model
-    save(qlora_model, 'EconoMind')
+    save(qlora_model, 'EconoMind_v2')
 
     # Finish WandB
     wandb.finish()

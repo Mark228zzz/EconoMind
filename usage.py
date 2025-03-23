@@ -43,8 +43,8 @@ def usage(ft_model_path, prompt, max_new_tokens=500):
 
 def main():
     usage(
-        ft_model_path='./FT_models/EconoMind',
-        prompt='''Explain the difference between fiscal and monetary policy''',
+        ft_model_path='./FT_models/EconoMind_v1',
+        prompt=input('Write your prompt\n--> '),
         max_new_tokens=200
     )
 
