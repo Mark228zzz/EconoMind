@@ -24,7 +24,7 @@ library_name: peft
 
 - **GitHub Repository:** [GitHub](https://github.com/Mark228zzz/EconoMind)
 - **HuggingFace Repository:** [HuggingFace](https://huggingface.co/Markoskokos/EconoMind)
-- **medium Article:** [Article](https://medium.com/@mark.mazur007) !
+- **medium Article:** [Article](https://medium.com/@mark.mazur/fine-tuning-a-finance-advisor-with-qlora-for-smarter-financial-recommendations-47366d229547) !
 
 ## Uses
 
